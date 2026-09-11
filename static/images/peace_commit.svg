@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 470">
+  <!-- Main window -->
+  <rect x="68" y="74" width="364" height="316" rx="34"
+        fill="#f6efff" stroke="#1d1b2d" stroke-width="9"/>
+
+  <!-- Header -->
+  <rect x="68" y="74" width="364" height="106" rx="34"
+        fill="#302d50"/>
+  <rect x="68" y="146" width="364" height="34" fill="#302d50"/>
+
+  <!-- Status dot -->
+  <circle cx="119" cy="125" r="17"
+          fill="#79e6bd" stroke="#1d1b2d" stroke-width="7"/>
+
+  <!-- Header line -->
+  <path d="M165 125H373"
+        stroke="#9690c8" stroke-width="15"
+        stroke-linecap="round"/>
+
+  <!-- Commit circle -->
+  <circle cx="250" cy="280" r="80"
+          fill="#ff718f"
+          stroke="#b92c59"
+          stroke-width="9"/>
+
+  <!-- Soft highlight -->
+  <path d="M202 234c15-22 33-31 52-35"
+        fill="none"
+        stroke="#ffb0bd"
+        stroke-width="13"
+        stroke-linecap="round"
+        transform="translate(-10 20)"/>
+
+  <!-- Check -->
+  <path d="M204 274l31 31 67-72"
+        fill="none"
+        stroke="#fffafc"
+        stroke-width="16"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        transform="translate(-1 20)"/>
+
+  <!-- Cute decorative shine -->
+  <path d="M396 326l9 18 18 9-18 9-9 18-9-18-18-9 18-9z"
+        fill="#ffd45f"
+        stroke="#1d1b2d"
+        stroke-width="6"
+        stroke-linejoin="round"/>
+
+  <!-- Tiny shine -->
+    <g transform="translate (-10 20)">
+          <circle cx="110" cy="219" r="8" fill="#ffffff" opacity="0.8"/>
+          <path d="M104 196c4-10 10-17 18-21"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="8"
+                stroke-linecap="round"
+                opacity="0.8"/>
+    </g>
+</svg>

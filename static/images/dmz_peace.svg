@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420">
+
+  <ellipse cx="260" cy="220" rx="220" ry="150" fill="#efe4ff"/>
+
+  <!-- North Korea card -->
+  <rect x="48" y="105" width="165" height="159" rx="28"
+        fill="#fff8fb" stroke="#1d1b2d" stroke-width="8"/>
+
+  <!-- North Korea flag -->
+  <rect x="77" y="145" width="107" height="68" fill="#024fa2"/>
+  <rect x="77" y="154" width="107" height="50" fill="#ed1c27"/>
+  <rect x="77" y="160" width="107" height="38" fill="#fff"/>
+  <rect x="77" y="165" width="107" height="28" fill="#ed1c27"/>
+
+  <circle cx="107" cy="179" r="17" fill="#fff"/>
+  <path d="M107 165
+           l4 9 10 1
+           -8 6 3 10
+           -9 -5
+           -9 5
+           3 -10
+           -8 -6
+           10 -1z"
+        fill="#ed1c27"/>
+
+  <!-- South Korea card -->
+  <rect x="307" y="105" width="165" height="159" rx="28"
+        fill="#fff8fb" stroke="#1d1b2d" stroke-width="8"/>
+
+  <!-- South Korea flag -->
+  <rect x="337" y="145" width="107" height="68" fill="#fff"
+        stroke="#1d1b2d" stroke-width="3"/>
+
+  <!-- simplified taegeuk -->
+  <path d="M390 179
+           A18 18 4 0 1 426 179
+           A9 9 0 0 1 408 179
+           A9 9 0 0 0 390 179Z"
+        fill="#cd223a"/>
+
+  <path d="M426 179
+           A18 18 0 0 1 390 179
+           A9 9 0 0 1 408 179
+           A9 9 0 0 0 426 179Z"
+        fill="#0047a0"/>
+
+  <!-- DMZ -->
+  <line x1="260" y1="100" x2="260" y2="326"
+        stroke="#1d1b2d"
+        stroke-width="7"
+        stroke-dasharray="12 12"/>
+
+<!--  <rect x="219" y="63" width="82" height="34" rx="10"-->
+<!--        fill="#1d1b2d"/>-->
+
+<!--  <text x="260" y="85"-->
+<!--        text-anchor="middle"-->
+<!--        font-family="monospace"-->
+<!--        font-size="15"-->
+<!--        font-weight="700"-->
+<!--        fill="#ffffff">-->
+<!--    -->
+<!--  </text>-->
+
+  <!-- awkward diplomacy -->
+  <rect x="76" y="300" width="138" height="48" rx="15"
+        fill="#d9f3ff" stroke="#1d1b2d" stroke-width="5"/>
+
+  <text x="145" y="327"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="14"
+        font-weight="700"
+        fill="#1d1b2d">
+    ceasefire?
+  </text>
+
+  <rect x="306" y="300" width="138" height="48" rx="15"
+        fill="#ffc2d8" stroke="#1d1b2d" stroke-width="5"/>
+
+  <text x="375" y="327"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="14"
+        font-weight="700"
+        fill="#1d1b2d">
+    works for me.
+  </text>
+
+</svg>

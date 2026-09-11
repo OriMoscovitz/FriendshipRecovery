@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="heartFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff728b"/>
+      <stop offset="55%" stop-color="#f45b78"/>
+      <stop offset="100%" stop-color="#df3e63"/>
+    </linearGradient>
+    <linearGradient id="patchFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e84563"/>
+      <stop offset="100%" stop-color="#b92545"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main plush heart -->
+  <path d="M512 901
+           C445 849 145 638 99 373
+           C62 160 298 74 430 204
+           C470 243 493 286 512 330
+           C531 286 554 243 594 204
+           C726 74 962 160 925 373
+           C879 638 579 849 512 901 Z"
+        fill="url(#heartFill)"
+        stroke="#a7193b"
+        stroke-width="20"
+        stroke-linejoin="round"/>
+
+  <!-- Inner seam -->
+  <path d="M512 874
+           C446 824 171 622 127 380
+           C94 196 291 112 410 225
+           C456 269 486 321 512 374
+           C538 321 568 269 614 225
+           C733 112 930 196 897 380
+           C853 622 578 824 512 874 Z"
+        fill="none"
+        stroke="#c82d4d"
+        stroke-width="8"
+        opacity="0.8"/>
+
+  <!-- Perimeter stitches -->
+  <path d="M512 857
+           C447 807 189 615 148 390
+           C118 224 291 143 394 241
+           C442 286 477 345 512 408
+           C547 345 582 286 630 241
+           C733 143 906 224 876 390
+           C835 615 577 807 512 857 Z"
+        fill="none"
+        stroke="#ffe3bf"
+        stroke-width="14"
+        stroke-linecap="round"
+        stroke-dasharray="28 34"/>
+
+  <!-- Lower-left patch -->
+  <path d="M189 617
+           C236 603 291 623 330 665
+           C367 705 372 759 349 800
+           C300 768 249 730 205 690
+           C185 672 174 640 189 617 Z"
+        fill="url(#patchFill)"
+        stroke="#9f1f3d"
+        stroke-width="9"
+        transform="translate(70 0)"/>
+
+ <g opacity="0.35" stroke="#f06a7e" stroke-width="10" transform="translate(90 0)">
+    <path d="M205 633 L329 757"/>
+    <path d="M228 617 L350 739"/>
+    <path d="M192 665 L309 782"/>
+    <path d="M191 714 L282 623"/>
+    <path d="M222 746 L322 646"/>
+    <path d="M254 771 L345 680" />
+  </g>
+
+
+    <g transform="translate(60 0)">
+  <!-- Patch stitches -->
+  <path d="M194 616
+           C238 606 287 624 326 665
+           C359 700 365 748 346 787"
+        fill="none"
+        stroke="#ffe3bf"
+        stroke-width="12"
+        stroke-linecap="round"
+        stroke-dasharray="18 22"/>
+    </g>
+  <!-- Upper-right patch -->
+  <g transform="rotate(18 736 300)">
+    <rect x="662" y="227" width="150" height="145" rx="14"
+          fill="#ffd3cf" stroke="#d4485e" stroke-width="8"/>
+    <rect x="678" y="243" width="118" height="113" rx="10"
+          fill="none" stroke="#c93b55" stroke-width="7"
+          stroke-dasharray="14 14" stroke-linecap="round"/>
+    <path d="M737 330
+             C719 313 694 295 697 275
+             C700 257 723 253 736 270
+             C748 251 775 257 779 276
+             C782 297 755 316 737 330 Z"
+          fill="#dd3557"/>
+  </g>
+
+  <!-- Eyes -->
+  <g fill="#431312">
+    <ellipse cx="362" cy="495" rx="52" ry="59"/>
+    <ellipse cx="662" cy="495" rx="52" ry="59"/>
+  </g>
+
+  <!-- Eyelashes -->
+  <g fill="none" stroke="#431312" stroke-width="10" stroke-linecap="round">
+    <path d="M324 468 Q309 474 302 462"/>
+    <path d="M327 451 Q312 450 306 439"/>
+    <path d="M700 468 Q715 474 722 462"/>
+    <path d="M697 451 Q712 450 718 439"/>
+  </g>
+
+  <!-- Eye highlights -->
+  <g fill="#fff">
+    <circle cx="343" cy="474" r="16"/>
+    <circle cx="379" cy="501" r="7"/>
+    <circle cx="643" cy="474" r="16"/>
+    <circle cx="679" cy="501" r="7"/>
+  </g>
+
+  <!-- Smile -->
+  <path d="M466 545 Q512 593 558 545"
+        fill="none"
+        stroke="#431312"
+        stroke-width="16"
+        stroke-linecap="round"/>
+
+  <!-- Blush -->
+  <g fill="#ff8794">
+    <ellipse cx="325" cy="567" rx="62" ry="36"/>
+    <ellipse cx="699" cy="567" rx="62" ry="36"/>
+  </g>
+  <g stroke="#ffd0d4" stroke-width="11" stroke-linecap="round">
+    <path d="M307 557 L296 575"/>
+    <path d="M329 553 L317 575"/>
+    <path d="M681 557 L670 575"/>
+    <path d="M703 553 L691 575"/>
+  </g>
+
+  <!-- Soft highlights -->
+  <ellipse cx="265" cy="259" rx="66" ry="35"
+           fill="#ff9bab" opacity="0.65"
+           transform="rotate(-28 265 259)"/>
+  <ellipse cx="192" cy="345" rx="24" ry="38"
+           fill="#ff9bab" opacity="0.55"
+           transform="rotate(18 192 345)"/>
+</svg>
