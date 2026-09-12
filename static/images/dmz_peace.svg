@@ -85,7 +85,7 @@
     }
   }
 </style>
-  <g transform="translate(20 -70)">
+  <g>
     <ellipse class="reveal bg-reveal" cx="260" cy="220" rx="220" ry="150" fill="#efe4ff"/>
   <g class="reveal north-reveal">
   <!-- North Korea card -->
