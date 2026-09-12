@@ -1,7 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420">
-  <g transform="translate(20 -70)">
-    <ellipse cx="260" cy="220" rx="220" ry="150" fill="#efe4ff"/>
+  <style>
+  .reveal {
+    opacity: 0;
+    animation-fill-mode: both;
+  }
 
+  .bg-reveal {
+    animation: fadeIn .5s ease-out .1s forwards;
+  }
+
+  .north-reveal {
+    animation: popIn .55s cubic-bezier(.2,.9,.3,1.2) .35s forwards;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .dmz-reveal {
+    opacity: 1;
+    stroke-dasharray: 12 12;
+    animation: dmzReveal .8s ease-out .8s both;
+  }
+
+  .south-reveal {
+    animation: popIn .55s cubic-bezier(.2,.9,.3,1.2) 1.05s forwards;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .bubble-left {
+    animation: bubbleIn .45s ease-out 1.55s forwards;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .bubble-right {
+    animation: bubbleIn .45s ease-out 1.95s forwards;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: translateY(18px) scale(.88);
+    }
+
+    70% {
+      opacity: 1;
+      transform: translateY(-3px) scale(1.03);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes bubbleIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px) scale(.92);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes dmzReveal {
+    from {
+      stroke-dashoffset: 230;
+      opacity: 0;
+    }
+
+    to {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+</style>
+  <g transform="translate(20 -70)">
+    <ellipse class="reveal bg-reveal" cx="260" cy="220" rx="220" ry="150" fill="#efe4ff"/>
+  <g class="reveal north-reveal">
   <!-- North Korea card -->
   <rect x="48" y="105" width="165" height="159" rx="28"
         fill="#fff8fb" stroke="#1d1b2d" stroke-width="8"/>
@@ -22,7 +108,8 @@
            -8 -6
            10 -1z"
         fill="#ed1c27"/>
-
+  </g>
+  <g class="reveal south-reveal">
   <!-- South Korea card -->
   <rect x="307" y="105" width="165" height="159" rx="28"
         fill="#fff8fb" stroke="#1d1b2d" stroke-width="8"/>
@@ -31,7 +118,8 @@
   <rect x="337" y="145" width="107" height="68" fill="#fff"
         stroke="#1d1b2d" stroke-width="3"/>
 
-  <!-- simplified taegeuk -->
+    <g transform="translate(-15 0)">
+        <!-- simplified taegeuk -->
   <path d="M390 179
            A18 18 4 0 1 426 179
            A9 9 0 0 1 408 179
@@ -43,9 +131,13 @@
            A9 9 0 0 1 408 179
            A9 9 0 0 0 426 179Z"
         fill="#0047a0"/>
+    </g>
 
+  </g>
   <!-- DMZ -->
-  <line x1="260" y1="100" x2="260" y2="326"
+  <line class="dmz-reveal"
+        x1="260" y1="100"
+        x2="260" y2="326"
         stroke="#1d1b2d"
         stroke-width="7"
         stroke-dasharray="12 12"/>
@@ -66,26 +158,31 @@
   <rect x="76" y="300" width="138" height="48" rx="15"
         fill="#d9f3ff" stroke="#1d1b2d" stroke-width="5"/>
 
+
+    <g class="reveal bubble-left">
   <text x="145" y="327"
         text-anchor="middle"
-        font-family="monospace"
-        font-size="14"
+        font-family="Consolas "
+        font-size="16"
         font-weight="700"
         fill="#1d1b2d">
     ceasefire?
   </text>
+    </g>
 
   <rect x="306" y="300" width="138" height="48" rx="15"
         fill="#ffc2d8" stroke="#1d1b2d" stroke-width="5"/>
 
+    <g class="reveal bubble-right">
   <text x="375" y="327"
         text-anchor="middle"
-        font-family="monospace"
-        font-size="14"
+        font-family="Consolas "
+        font-size="16"
         font-weight="700"
         fill="#1d1b2d">
     works for me.
   </text>
+      </g>
   </g>
 
 </svg>
