@@ -103,7 +103,7 @@
       apologyDeployed = true;
 
       setTimeout(() => {
-        openVideo("XspDkqEtWFE", 19);
+        openVideo("XspDkqEtWFE", 0);
       }, 650);
     }
 
