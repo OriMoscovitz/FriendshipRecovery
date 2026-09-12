@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420">
-
-  <ellipse cx="260" cy="220" rx="220" ry="150" fill="#efe4ff"/>
+  <g transform="translate(20 -70)">
+    <ellipse cx="260" cy="220" rx="220" ry="150" fill="#efe4ff"/>
 
   <!-- North Korea card -->
   <rect x="48" y="105" width="165" height="159" rx="28"
@@ -86,5 +86,6 @@
         fill="#1d1b2d">
     works for me.
   </text>
+  </g>
 
 </svg>
