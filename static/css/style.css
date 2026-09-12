@@ -1358,6 +1358,8 @@ h1{
 /* ONLY phones */
 @media (max-width: 700px) {
   .art.dmz-art {
+    width: 85vw !important;
+    max-width: none !important;
     transform: translateX(-50%) translateY(-205px) rotate(-3deg) !important;
   }
 }
