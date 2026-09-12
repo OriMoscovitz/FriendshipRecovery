@@ -10,10 +10,8 @@ SLIDES = [
         "title": "מבצע: לא להיות בריב",
         "subtitle": "לא מבקשת שנהיה בסטיז. מבקשת להפסיק להיות צפון ודרום קוריאה.",
         "tag": "boot sequence",
-        # "image": "moon_cat.svg",
-        # "image_class": "art-xl art-top-left floaty",
         "image": "dmz_peace.svg",
-        "image_class": "art-xl art-bottom-left floaty",
+        "image_class": "dmz-art",
         "accent": "pink"
     },
     {
