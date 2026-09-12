@@ -554,9 +554,6 @@ h1{
   .rotate-slow,
   .wiggle,
   .spark,
-  .confetti {
-    animation: none !important;
-  }
 
   .forgiveness-protocol.active .protocol-line,
   .forgiveness-protocol.active .protocol-error,
