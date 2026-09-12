@@ -104,7 +104,7 @@
 
       setTimeout(() => {
         openVideo("XspDkqEtWFE", 0);
-      }, 650);
+      }, 2200);
     }
 
 //    confettiBtn?.addEventListener("click", () => {
